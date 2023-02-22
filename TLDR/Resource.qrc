@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/main">
         <file>resource/HarmonyOS_Sans_SC_Regular.ttf</file>
+        <file>resource/BG.jpg</file>
+        <file>resource/FQ.jpg</file>
     </qresource>
 </RCC>

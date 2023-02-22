@@ -76,7 +76,7 @@
       <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -93,17 +93,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <QtMoc Include="include\Backend\ServerConnection.h" />
     <ClInclude Include="include\ginclude.h" />
-    <ClInclude Include="include\UI\SettingsWidget.h" />
+    <QtMoc Include="include\UI\StateWidget.h" />
     <QtMoc Include="include\StyleSheet\StyleSheet.h" />
-    <ClInclude Include="include\UI\InputWidget.h" />
+    <QtMoc Include="include\UI\InputWidget.h" />
     <QtMoc Include="include\UI\MainWindow.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="source\Backend\ServerConnection.cpp" />
     <ClCompile Include="source\StyleSheet\StyleSheet.cpp" />
     <ClCompile Include="source\UI\InputWidget.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="source\UI\MainWindow.cpp" />
+    <ClCompile Include="source\UI\StateWidget.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="Resource.qrc" />
